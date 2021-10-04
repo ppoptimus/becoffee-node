@@ -16,7 +16,7 @@ app.post("/pushmulticast", (req, res) => {
 	PushMessageMulticast(req, res)
 })
 
-const port = process.env.port || 5000
+const port = process.env.PORT || 5000
 app.listen(port, () => {
 	console.log("Application is running on port: " + port)
 })

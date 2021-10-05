@@ -12,9 +12,9 @@ app.get("/", (req, res) => {
 	res.send("Connected");
 })
 
-app.post("/pushmulticast", (req, res) => {
-	PushMessageMulticast(req, res)
-})
+app.post('/multicast', (req, res) => {
+  PushMessageMulticast(req, res);
+});
 
 const port = process.env.PORT || 5000
 app.listen(port, () => {

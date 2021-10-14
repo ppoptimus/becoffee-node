@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
 })
 
 app.post('/multicast', (req, res) => {
+	console.log(req.body)
   PushMessageMulticast(req, res);
 });
 
